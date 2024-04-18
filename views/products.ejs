@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="/style.css">
+
+<h1>Products</h1>
+<ul>
+  <% products.forEach(product => { %>
+    <li><%= product.name %> - $<%= product.price %></li>
+  <% }) %>
+</ul>

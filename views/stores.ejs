@@ -1,0 +1,16 @@
+<!-- views/stores.ejs -->
+<link rel="stylesheet" href="/style.css">
+
+<h1>Stores</h1>
+<% stores.forEach(store => { %>
+  <div>
+    <h2><%= store.name %></h2>
+    <h3>Location: <%= store.location %></h3>
+    <h4>Products:</h4>
+    <ul>
+      <% store.products.forEach(product => { %>
+        <li><%= product.name %> - $<%= product.price %></li>
+      <% }) %>
+    </ul>
+  </div>
+<% }) %>
